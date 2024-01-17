@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+
+        }
+        #main{
+            display: flex;
+
+        }
+        .categories{
+            display: flex;
+            flex-basis: 150px;
+            background-color: azure;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-direction: column;
+
+        }
+        #products{
+            display: flex;
+            flex-grow: 2;
+            flex-basis: 700px;
+            background-color: beige;
+            gap: 10px;
+
+        }
+      .product img{
+        object-fit: cover;
+        max-width: 100%;
+      }
+    </style>
+</head>
+<body>
+    <h1>SingaSnack</h1>
+    <h2>Snacks of Singapore: Low Cost, High Calories</h2>
+
+    <!-- main part -->
+
+    <div id="main">
+        <div class="categories">
+            <a href="#">All</a><a href="">Biscuits</a><a href="">Cakes</a><a href="">Sweets</a><a href="">Fried</a>
+        </div>
+   
+
+    <div id="products">
+        <div class="product">
+            <h1></h1>
+            <img src="imgs/ang_kue_ku.jpg" alt="">
+        </div>
+
+   
+        <div class="product">
+            <h1></h1>
+            <img src="imgs/curry_puff.jpg" alt="">
+        </div>
+  
+   
+        <div class="product">
+            <h1></h1>
+            <img src="imgs/kueh.jpg" alt="">
+        </div>
+   
+    
+        <div class="product">
+            <h1></h1>
+            <img src="imgs/love-letters.jpg" alt="">
+        </div>
+    
+   
+        <div class="product">
+            <h1></h1>
+            <img src="imgs/tu-tu-kueh.jpg" alt="">
+        </div>
+
+        <div class="product">
+            <h1></h1>
+            <img src="imgs/pexels-photo-376464.jpeg" alt="">
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
