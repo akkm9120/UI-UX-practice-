@@ -35,9 +35,26 @@
         }
       .product img{
         object-fit: cover;
-        max-width: 25wh;
-        height: 20vh;;
+        max-width: 100%;
+        height: auto;;
+
       }
+      .product{
+        display: flex;
+        flex-basis: 300px;
+      }  
+/* for devices from o to 480px */
+     @media (min-width:480px){
+        .products img{
+            flex-wrap: nowrap;
+        }
+     }
+
+     @media screen {
+        
+     }
+
+
     </style>
 </head>
 <body>
