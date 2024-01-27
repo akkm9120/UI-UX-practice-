@@ -19,35 +19,31 @@ function main() {
     ]
     
 
-    displayMenu();
-    let choice = parseInt(prompt('Please Enter your Choice : '));
-
-   while(choice!=6){
-
-    switch(choice) {
-        case 1:
-        listAllCustomers();
-          break;
-        case 2:
-        searchForCustomers();
-          break;
-        case 3:
-        addCustomer(customers);
+    do {
+        displayMenu();
+        let choice = parseInt(prompt("Please enter your choice: "));
+        switch(choice) {
+          case 1:
+            listAllCustomers(customers);
             break;
-        case 4:
-         updateCustomer(customers);    
+          case 2:
+            searchForCustomer();
             break;
-        case 5:
-        deleteCustomer();          
+          case 3:
+            addNewCustomer(customers);
             break;
-        default:   
-        return choice;
-    
-      }
-      displayMenu();
-      let choice = parseInt(prompt('Please Enter your Choice : '));
+          case 4:
+            updateCustomer(customers);
+            break;
+          case 5:
+            deleteCustomer();
+            break;
+          default:
+            console.log("Invalid choice. Please enter a number between 1 and 6.");
+        }
+      } while (choice != 6);
+      
     }
-}
 
 main();
 
